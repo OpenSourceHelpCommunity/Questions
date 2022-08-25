@@ -1,0 +1,3 @@
+hello today i tried to solve"dancing" lab in hack the box,then i used smbclient("smb:server message block") ,
+but in all of my attempts i found this error:"zsh:illegal hardware instruction smbclient  -L 10.129.183.187 ".
+i don't know what this error mean,unfortuantely there are not any solution in google,so i hope that i will find a solution of it here
