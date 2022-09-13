@@ -1,0 +1,7 @@
+my $f11 = "./temp/synthesis_input.tcl";
+
+# Use the open() function to create the file.
+unless(open F11, '>'.$f11) {
+    # Die with error message 
+    # if we can't open it.
+    die "created $f11\n"
