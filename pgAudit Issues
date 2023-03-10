@@ -1,0 +1,6 @@
+I compiled pgaudit on Windows server 2019 using Visual Studio. I added shared_preload_libraries = 'pgaudit' and restarted the server.
+
+I tried for both 13 and 15 
+When I try to add the extension, I get:
+ERROR: could not find function "pgaudit_ddl_command_end" in file "C:/Program Files/PostgreSQL/13/lib/pgaudit.dll.
+I see the function in the source code 
