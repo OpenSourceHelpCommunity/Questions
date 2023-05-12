@@ -1,0 +1,45 @@
+//This is the first for me to ask, so if you see the question published it is an achivement :)
+//How can i solve the problem of "Time limit exceeded" on codeforces for problem: A. Ksusha and Array?
+//the time exceeded at test case number 22, if you can help i'll be very greatful to you
+//this is my code:
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+     const int max_capacity= 10e5;
+     int arr[max_capacity];
+     int flag;
+
+     int actual_size;
+     cin>> actual_size;
+
+     for(int i=0; i<actual_size; i++)
+        cin>> arr[i];
+
+     for(int n=0; n<actual_size; n++)
+     {
+         for (int j=0; j<actual_size; j++)
+         {
+             if( arr[j]% arr[n]==0)
+                flag=1;
+             else
+             {
+                 flag=0;
+                 break;
+             }
+         }
+
+         if(flag)
+         {
+            cout<< arr[n];
+            return 0;
+         }
+     }
+
+     if(flag==0)
+        cout<< -1;
+}
+
+
